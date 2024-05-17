@@ -1,12 +1,12 @@
 // Function for Task One
-function processArray(numbers) {
+export function processArray(numbers) {
   return numbers.map((number) => {
     return number % 2 === 0 ? number * number : number * 3;
   });
 }
 
 // Function for Task 2
-function formatArrayStrings(strings, numbers) {
+export function formatArrayStrings(strings, numbers) {
   return strings.map((string, index) => {
     return numbers[index] % 2 === 0
       ? string.toUpperCase()
@@ -15,7 +15,7 @@ function formatArrayStrings(strings, numbers) {
 }
 
 // Function for Task Three
-function createUserProfiles(originalNames, modifiedNames) {
+export function createUserProfiles(originalNames, modifiedNames) {
   const userProfiles = [];
 
   for (let i = 0; i < originalNames.length; i++) {
