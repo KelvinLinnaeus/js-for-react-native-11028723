@@ -13,9 +13,12 @@ This repository contains JavaScript files for manipulating arrays.
 2. **userInfo.js**: Contains a function for creating user profiles.
    - `createUserProfiles`: Takes an array of original names and an array of modified names, and returns an array of objects, each containing originalName, modifiedName, and an auto-incremented id starting from 1.
 
-## Usage:
+
 
 To use these functions in your project:
+ ```bash
+   git clone https://github.com/KelvinLinnaeus/js-for-react-native-11028723
+   ```
 
 1. Clone the repository.
 2. Import the desired function(s) into your JavaScript file.
