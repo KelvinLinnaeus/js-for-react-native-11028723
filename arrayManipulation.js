@@ -14,6 +14,23 @@ function formatArrayStrings(strings, numbers) {
   });
 }
 
+// Function for Task Three
+function createUserProfiles(originalNames, modifiedNames) {
+  const userProfiles = [];
+
+  for (let i = 0; i < originalNames.length; i++) {
+    const userProfile = {
+      originalName: originalNames[i],
+      modifiedName: modifiedNames[i],
+      id: i + 1,
+    };
+
+    userProfiles.push(userProfile);
+  }
+
+  return userProfiles;
+}
+
 // Test
 let arrayNumbers = [1, 2, 3, 4, 5];
 let arrayStrings = ["Kelvin", "Peter", "Micheal", "John", "Jesus"];
@@ -28,3 +45,10 @@ console.log(`Task 2.\n -The function takes two arrays as arguments:
    An array of numbers processed by processArray.\n-The function modifies each string based on its corresponding number:
   Capitalize the entire string if the number is even.
   Convert the string to lowercase if the number is odd.\nArray of String: ${arrayStrings}\nResult: ${task2}`);
+
+const task3 = createUserProfiles(arrayStrings, task2);
+console.log(`Task 3. \n-Takes an array of names and the array of modified names from Task 2. \n- Returns an array of objects, each containing originalName, modifiedName,
+and id (auto-incremented starting from 1).\n\nArray of String: ${arrayStrings}\nModified Names From Task 2.: ${task2}\nResult`);
+task3.map((result) => {
+  console.log(result);
+});
